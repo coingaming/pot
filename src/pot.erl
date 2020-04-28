@@ -45,8 +45,9 @@
 -type interval() :: integer().
 -type secret() :: binary().
 -type token() :: binary().
+-type internal_token_option() :: valid_totp_option()
 
--type token_option() :: {token_length, pos_integer()}.
+-type token_option() :: {token_length, pos_integer()} | internal_token_option().
 
 -type time_interval_option() :: {addwindow, integer()} |
                                 {interval_length, pos_integer()} |
